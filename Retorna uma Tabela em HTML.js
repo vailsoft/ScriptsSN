@@ -17,7 +17,7 @@ function getProdutos() {
   html += '</tbody>';
   html += '</table>';
 
-  gs.print(html);
+  return html;
 }
 
 // Formata com 2 Casas decimais uma string que contenha virgula ou ponto
@@ -39,6 +39,7 @@ function formatNumber (number) {
 
 getProdutos()
 
+/*
 Retorna uma tabela em HTML 
 Lista Produtos
 |-------------------------------------------------------------------------------------------------------------
@@ -48,3 +49,4 @@ Lista Produtos
 ----------------------------------------------------------------------------------------------------------------
 | fdd0eb9d47312110ccc45882e36d4301	| PROD0000003 | Farinha de Trigo Maria | 1512	      | 2023-06-28 |  45,26  |
 |--------------------------------------------------------------------------------------------------------------
+*/
