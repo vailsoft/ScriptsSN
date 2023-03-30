@@ -1,0 +1,16 @@
+// Formata com 2 Casas decimais uma string que contenha virgula ou ponto
+function formatNumber (number) {
+        if (!number) {
+            number = "";
+        } else {
+            if (number.includes(",")) {
+                number = number.replace(",", ".");
+                number = parseFloat(number).toFixed(2);
+                number = number.replace(".", ",");
+            } else {
+                number = parseFloat(number).toFixed(2);
+                number = number.replace(".", ",");
+            }
+        }
+        return number;
+    }
